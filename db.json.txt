@@ -1,0 +1,33 @@
+{
+"users" : 
+     
+       	{
+ 	"name"  : "Nandene",
+	"age"     : 21,
+	"dob"    : "15-01-2000",
+	"firstname": "Nandene",
+	"lastname" : "S",
+	"more":{
+	              "address_line1": "2/30, Anna Colony",
+	               "address_line2": "GM Nagar",
+	               "address_line3": "Salem",
+	               "phone": "9877869469"  
+         	}
+	},
+	{
+ 	"name"  : "Haridharan",
+	"age"     : 20,
+	"dob"    : "05-12-2001",
+	"firstname": "Haridharan",
+	"lastname" : "T",
+	"more":{
+	              "address_line1": "30/30, GH Colony",
+	               "address_line2": "Lotus Nagar",
+	               "address_line3": "Salem",
+	               "phone": "9080076855"  
+         	}
+	},
+	
+	}
+              
+}

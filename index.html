@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)file:///E:/GROOTON%20TECH/.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+        <script src="./index_files/jquery.min.js.download" type="text/javascript"></script>
+        <script src="./index_files/jquery.min.js(1).download"></script>
+        <script src="./index_files/bootstrap.min.js.download"></script>
+       
+                    
+
+        <script>
+            $(document).ready(function(){
+                
+                $("#btn").click(function(){
+                   $.get("https://grootantech.free.beeceptor.com",function(data,status){
+                      console.log(data); 
+                      var data=(data);
+                    
+                      data.forEach(function(dt){
+                         $("#tdata").append("<tr>"+
+                               "<td>"+dt.name+"</td>"+
+                               "<td>"+dt.age+"</td>"+
+                               "<td>"+dt.dob+"</td>"+
+                               "<td>"+dt.firstname+"</td>"+
+                               "<td>"+dt.lastname+"</td>"+
+                                 "<td>"+dt.more.address_line1+"</td>"+
+                                 "<td>"+dt.more.address_line2+"</td>"+
+                                 "<td>"+dt.more.address_line3+"</td>"+
+                                 "<td>"+dt.more.phone+"</td>"+
+                      
+                               +"</tr>"
+                              );
+                            });
+                           }); 
+                          });
+                        }); 
+</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+        <body>
+            <button class="btn btn-primary" id="btn">GET</button>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Dob</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Address_line1</th>
+                        <th>Address_line2</th><!-- comment -->
+                        <th>Address_line3</th><!-- comment -->
+                        <th>Phone</th>
+                        
+                </tr></thead><tbody id="tdata">
+                    
+                <tr><td>Nandene</td><td>21</td><td>15-01-2000</td><td>Nandene</td><td>S</td><td>2/30, Anna Colony</td><td>GM Nagar</td><td>Chennai</td><td>9877869469</td></tr><tr><td>Gokulragav</td><td>13</td><td>29-01-2009</td><td>Gokulragav</td><td>S.T</td><td>30/30, GH Colony</td><td>Lotus Nagar</td><td>Salem</td><td>9080076855</td></tr><tr><td>Swetha</td><td>20</td><td>23-06-2000</td><td>Swetha</td><td>S</td><td>20,  DS Apartment</td><td>Salem Main road</td><td>Erode</td><td>9877776569</td></tr><tr><td>Hari</td><td>22</td><td>05-12-1999</td><td>Hari</td><td>34, AGS nagar</td><td>Chennai Main road</td><td>Salem</td><td>9096749539</td></tr></tbody>
+              
+               
+            </table>
+        
+</body></html>
